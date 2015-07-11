@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tienda integrada con paypal laravel5 bootstrap</title>
+</head>
+<body>
+	<div>
+		1. DEFINIR LA RUTA 'store.site' en estos 2 archivos.
+		C:\wamp\bin\apache\apache2.4.9\conf\extra\httpd-vhosts.conf
+		C:\Windows\System32\drivers\etc\hosts
+						<VirtualHost *:80>
+						    DocumentRoot "c:/wamp/www/store"
+						    ServerName store.site
+						    <Directory  "c:/wamp/www/store">
+						        AllowOverride All
+						        Require local
+						    </Directory>
+						</VirtualHost>
+		2.Para usar comandos de laravel: ejecutar consola como administrador
+
+			2.1. Actualizar composer si es necesario:
+			c:\ProgramData\ComposerSetup\bin> php composer.phar self-update
+			2.2. Instalar laravel installer:
+			composer global require "laravel/installer=~1.1"
+
+			2.3. Agregarlo a las variables de entorno: C:\Users\Melissa\AppData\Roaming\Composer\vendor\bin
+
+			
+	</div>
+	<div>
+		3. CREAR EL PROYECTO EN C:\WAMP\WWW
+		laravel new store
+
+		4.EJECUTAR EL SERVIDOR
+		ver archivo .env en la configuracion
+		php artisan serve --> localhost:8000 o store.site
+		
+	</div>
+	<div>
+		5. CREAR MODELOS
+		php artisan make:model Category -m
+		php artisan make:model Product -m
+	</div>
+	<div>
+		6. CREAR SCHEMAS
+		en database/migrations/...categories crear campos de la tabla al igual q en la migracion de products
+
+		7.CREAR BASE DE DATOS
+
+		7.1 Ir a phpmyadmin y crear la base de datos 'store'.
+		7.2 En el archivo .env agregar el nombre de nuestra bd 'store'.
+		7.3 Crear una tabla de migraciones en la bd 'store' para q administre las tablas
+		php artisan migrate:install.
+		7.4 Crear las tablas de las migraciones y moverlas a la bd
+		 php artisan migrate
+		 Ahora vemos q tenemos nuestras tablas creadas en la bd
+	</div>
+	<div>
+		8. CREAR INFORMACION DE PRUEBA CON SEEDERS
+
+		php artisan make:seeder CategoryTableSeeder
+
+		en este archivo crear un array con datos de prueba e insertarlos en el modelo
+
+		php artisan make:seeder ProductTableSeeder
+
+		y hacemos lo mismo...
+
+		9. CARGAR LOS DATOS DE PRUEBA A NUESTRA BD
+		9.1 Llamamos los seeders de category y product en DatabaSeeder.php
+		9.2	php artisan db:seed
+		9.3 si revisamos nuestras tablas en la bd ya tenemos datos de prueba.
+	</div>
+	<div>
+		10. CONTROLADORES Y VISTAS
+
+		10.1 abrir el archivos routes.php y modificar la ruta de inicio de la app.
+		10.2 crear el controlador storeController
+			php artisan make:controller StoreController
+
+		10.3 creamos la vista store/index.blade.php
+		10.4 Creamos la vista store/template
+	</div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

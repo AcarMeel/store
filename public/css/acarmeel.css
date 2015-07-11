@@ -1,0 +1,153 @@
+/* @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";*/
+
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Patrick+Hand);
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+@import url(http://fonts.googleapis.com/css?family=Handlee);
+@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
+body {
+    background-color: #FF3333;
+    /*#E8250D*/
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.7em;
+    padding-top: 70px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #333;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Patrick Hand', cursive;
+}
+/*---------------FOOTER---------------*/
+
+footer {
+    background-color: #474747;
+    text-align: center;
+}
+
+footer p {
+    text-align: justify;
+}
+
+.avatar {
+    border: 5px solid red;
+    border-radius: 50%;
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+
+ul.redes li {
+    display: inline-block;
+}
+
+ul.redes li a {
+    color: white;
+}
+/*--------------------FONTS------------------------------*/
+/*descriptions*/
+
+.QS-font {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+/*body*/
+
+.PH-font {
+    font-family: 'Patrick Hand', cursive;
+}
+/*titles*/
+
+.g-font {
+    font-family: 'Gabriela', serif;
+}
+/*logo*/
+
+.ds-font {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+}
+
+.hfont {
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+}
+/*footer acarmeel*/
+
+.c-font {
+    font-family: 'Calligraffitti', cursive;
+}
+
+.white {
+    color: white;
+}
+/*--------------------------PINTEREST_GRID ESTILOS------------------*/
+.product-info {
+	color: #A92733;
+	font-weight: bolder;
+}
+#products {
+   position: relative;
+   max-width: 100%;
+   width: 100%;
+  
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.white-panel {
+    position: absolute;
+    background: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.white-panel h3 {
+    font-size: 1em;
+}
+
+.white-panel h3 a {
+    color: #A92733;
+}
+
+.white-panel:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/*----------------------------DETALLES PRODUCTO-----------------*/
+.product-block {
+	background-color: white;
+	border-radius: 1em;
+	padding: 1em;
+}
+
+/*--------------SLIDER---------------*/
+.navbar {
+    margin-bottom: 0 !important;
+}
+.navbar-default{
+    margin-bottom: 0 !important;
+}
+.navbar-fixed-top{
+    margin-bottom: 0 !important;
+}
+.item img {
+    height: 250px;
+}
