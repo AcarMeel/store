@@ -13,8 +13,10 @@
 					<p> {{$product->extract}} </p>
 					<h3><span class="label label-success">Precio: ${{ number_format($product->price,2) }}</span></h3>
 					<p>
-						<a class="btn btn-primary" href="#"><i class="fa fa-cart-plus"></i> I want it</a>
-						<a class="btn btn-default" href="{{route('product-detail',$product->slug)}}"><i class="fa fa-chevron-circle-right"></i> Read more</a>
+						<a class="btn btn-primary" href="{{route('cart-add',$product->slug)}}">
+							<i class="fa fa-cart-plus"></i> I want it</a>
+						<a class="btn btn-default" href="{{route('product-detail',$product->slug)}}">
+							<i class="fa fa-chevron-circle-right"></i> Read more</a>
 					</p>
 				</div>
 			</div>

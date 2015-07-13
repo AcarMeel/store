@@ -19,8 +19,10 @@
 					<h3><span class="label label-success">Price: ${{number_format($product->price,2)}}</span></h3>
 					<br>
 					<div class="btn-group btn-group-justified">
-						<a class="btn btn-default" href="{{route('home')}}"><i class="fa fa-arrow-circle-left"></i> Back</a>
-						<a class="btn btn-primary" href="#"><i class="fa fa-cart-plus"></i> I want it</a>
+						<a class="btn btn-default" href="{{route('home')}}">
+							<i class="fa fa-arrow-circle-left"></i> Back</a>
+						<a class="btn btn-primary" href="{{route('cart-add',$product->slug)}}">
+							<i class="fa fa-cart-plus"></i> I want it</a>
 					</div>
 				</div>
 			</div>

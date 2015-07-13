@@ -6,9 +6,11 @@
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script:400,700);
 @import url(http://fonts.googleapis.com/css?family=Handlee);
 @import url(http://fonts.googleapis.com/css?family=Calligraffitti);
+
+/*--------------------------ESTILOS MIOS------------------*/
 body {
     background-color: #FF3333;
-    /*#E8250D*/
+    /*#E8250D*/ 
     font-family: 'Patrick Hand', cursive;
     font-size: 1.7em;
     padding-top: 70px;
@@ -22,8 +24,13 @@ a:hover {
     color: #333;
 }
 
-h1,h2,h3,h4,h5,h6{
-	font-family: 'Patrick Hand', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Patrick Hand', cursive;
 }
 /*---------------FOOTER---------------*/
 
@@ -90,15 +97,16 @@ ul.redes li a {
     color: white;
 }
 /*--------------------------PINTEREST_GRID ESTILOS------------------*/
+
 .product-info {
-	color: #A92733;
-	font-weight: bolder;
+    color: #A92733;
+    font-weight: bolder;
 }
+
 #products {
-   position: relative;
-   max-width: 100%;
-   width: 100%;
-  
+    position: relative;
+    max-width: 100%;
+    width: 100%;
 }
 
 img {
@@ -130,24 +138,39 @@ img {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-
 /*----------------------------DETALLES PRODUCTO-----------------*/
-.product-block {
-	background-color: white;
-	border-radius: 1em;
-	padding: 1em;
-}
 
+.product-block {
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+}
 /*--------------SLIDER---------------*/
+
 .navbar {
     margin-bottom: 0 !important;
 }
-.navbar-default{
+
+.navbar-default {
     margin-bottom: 0 !important;
 }
-.navbar-fixed-top{
+
+.navbar-fixed-top {
     margin-bottom: 0 !important;
 }
+
 .item img {
     height: 250px;
+}
+/*-------------------------CARRITO COMPRAS---------------*/
+
+.table-cart {
+    background-color: #fff;
+    border-radius: 1em;
+    margin-bottom: 30px;
+    padding: 1em;
+}
+
+.table-cart img {
+    width: 50px;
 }
