@@ -16,12 +16,7 @@
       	<li><a href="#"><i class="fa fa-heart fa-2x"></i></a></li>
       	<li><a href="#"><i class="fa fa-envelope fa-2x"></i></a></li>
         <li><a href="{{route('cart-show')}}"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-2x"></i> <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#"><i class="fa fa-sign-in"></i> Log in</a></li>
-          </ul>
-        </li>
+        @include('store.partials.menu-user')
       </ul>
     </div>
   </div>

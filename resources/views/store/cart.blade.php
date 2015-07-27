@@ -61,7 +61,7 @@
 					<a href="{{route('home')}}" class="btn btn-default">
 							<i class="fa fa-chevron-circle-left"></i> Continue
 					</a>
-				  	<a href="#" class="btn btn-info"><i class="fa fa-credit-card"></i> Buy</a>
+				  	<a href="{{route('order-detail')}}" class="btn btn-info"><i class="fa fa-credit-card"></i> Buy</a>
 				</p>
 			</div>
 			@else
