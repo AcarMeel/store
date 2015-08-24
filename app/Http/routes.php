@@ -12,7 +12,7 @@
 */
 
 /*
-| dependiendo del slug de la url, buscamos el producto en la bd con el mismo slug y 
+| dependiendo del slug de la url, buscamos el producto en la bd con el mismo slug y
 |traemos los datos relacionados al producto.
 |Sometimes you may wish to use your own resolver for route parameters. Simply use the Route::bind method:
 |
@@ -23,11 +23,30 @@
 
 */
 
+/*==========================================================
+|    							PRODUCTS DEPENDENCY INJECTION
+==========================================================*/
 Route::bind('product',function($slug)
 {
 	return App\Product::where('slug',$slug)->first();
 });
 
+/*==========================================================
+|    							CATEGORY DEPENDENCY INJECTION
+==========================================================*/
+Route::bind('category',function($category){
+	return App\Category::find($category);
+});
+
+/*==========================================================
+|    							USER DEPENDENCY INJECTION
+==========================================================*/
+Route::bind('user',function($user){
+	return App\User::find($user);
+});
+/*==========================================================
+|  													HOME
+==========================================================*/
 Route::get('/',[
 	'as'=>'home',
 	'uses'=>'StoreController@index'
@@ -71,20 +90,20 @@ Route::get('cart/update/{product}/{quantity}',[
 
 	]);
 
-/*
-|---------------- Middleware-->peticion detalle pedido.
+/*=============================================================================
+|          MIDDLEWARE-->peticion detalle pedido.
 | auth es un middleware q detecta si el user inicio sesion.
-aqui el middleware se ejecuta primero q el controlador.
-*/
+| aqui el middleware se ejecuta primero q el controlador.
+=============================================================================*/
 Route::get('order-detail', [
 	'middleware' => 'auth',
 	'as' => 'order-detail',
 	'uses' => 'CartController@orderDetail'
 ]);
 
-/* -------------------------------------------------------
+/* ==========================================================================
 |                AUTENTICACION
-----------------------------------------------------------*/
+	==========================================================================*/
 // Authentication routes...
 Route::get('auth/login', [
 	'as'=>'login-get',
@@ -111,3 +130,29 @@ Route::post('auth/register', [
 	'as'=>'register-post',
 	'uses'=>'Auth\AuthController@postRegister'
 	]);
+
+
+/********************************************
+|-------------------PAYPAL------------------
+*********************************************/
+//enviar pedido
+Route::get('payment', array(
+	'as' => 'payment',
+	'uses' => 'PaypalController@postPayment',
+));
+//paypal redirecciona a esta ruta
+Route::get('payment/status', array(
+	'as' => 'payment.status',
+	'uses' => 'PaypalController@getPaymentStatus',
+));
+
+
+/*=========================================================================
+|															ADMIN PANEL
+	=========================================================================*/
+	Route::get('admin/home', function(){
+		return view('admin.home');
+	});
+Route::resource('admin/category', 'Admin\CategoryController');
+Route::resource('admin/product', 'Admin\ProductController');
+Route::resource('admin/user', 'Admin\UserController');

@@ -10,10 +10,10 @@
 /*--------------------------ESTILOS MIOS------------------*/
 body {
     background-color: #FF3333;
-    /*#E8250D*/ 
-    font-family: 'Patrick Hand', cursive;
-    font-size: 1.7em;
-    padding-top: 70px;
+    /*#E8250D*/
+    /*font-family: 'Patrick Hand', cursive;*/
+    font-size: 1.5em;
+    padding-top: 55px;
 }
 
 a {
@@ -37,7 +37,7 @@ h6 {
 footer {
     background-color: #474747;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 4.3%;
 }
 
 footer p {

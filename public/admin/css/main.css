@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Patrick+Hand);
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+@import url(http://fonts.googleapis.com/css?family=Handlee);
+@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
+
+body{
+  padding-top: 70px;
+  /*font-family: 'Patrick Hand', cursive;*/
+  background-color: rgba(255, 61, 58, 0.9);
+  font-size: 1.5em;
+}
+/*--------------------FONTS------------------------------*/
+/*descriptions*/
+
+.QS-font {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+/*body*/
+
+.PH-font {
+    font-family: 'Patrick Hand', cursive;
+}
+/*titles*/
+
+.g-font {
+    font-family: 'Gabriela', serif;
+}
+/*logo*/
+
+.ds-font {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+}
+
+.hfont {
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+}
+/*footer acarmeel*/
+
+.c-font {
+    font-family: 'Calligraffitti', cursive;
+}
+
+footer{
+  background: #333;
+  padding: 20px;
+}
+footer h3 {color: #f0f0f0;}
+.page{
+  background: #fff;
+  border-radius: 1em;
+  margin: 1em;
+  min-height: 500px;
+  padding: 1em;
+}
+
+
+.table-striped{
+  background-color: #D8BDD2;
+}
+
+/*=======================================================
+      ADMINISTRATION PANEL HOME
+=========================================================*/
+.icon-home{
+  color: #474747;
+  font-size: 60px;
+  margin: 20px;
+}
+
+.btn-home-admin{
+  font-size: 25px;
+}

@@ -60,32 +60,9 @@
 						    </div>
 
 						    <div class="form-group">
-						        <!--<label for="" class="col-lg-2">Type</label>--> 
-						        <input type="hidden" name="type" value="user">
-						    </div>
-
-						    <div class="form-group">
-						        <label for="" class="col-lg-2">Active</label> 
-						        <div class="col-lg-10">
-						        <div class="radio">
-						          <label>
-						            <input name="active" id="optionsRadios1" value="1" checked="" type="radio">
-						            Active
-						          </label>
-						        </div>
-						        <div class="radio">
-						          <label>
-						            <input name="active" id="optionsRadios2" value="2" type="radio">
-						            No active
-						          </label>
-						        </div>
-						      </div>
-						    </div>
-
-						    <div class="form-group">
 						        <label for="" class="col-lg-2">Address</label> 
 						        <div class="col-lg-10">
-							        <textarea class="form-control" rows="3" id="textArea" name="address"></textarea>
+							       <textarea class="form-control" name="address">{{ old('address') }}</textarea>
 						      </div>
 						    </div>
 

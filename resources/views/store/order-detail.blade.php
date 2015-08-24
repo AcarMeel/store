@@ -49,7 +49,7 @@
 			<a href="{{route('cart-show')}}" class="btn btn-default">
 				<i class="fa fa-chevron-circle-left fa-2x"></i> Back</a>
 
-			<a href="#" class="btn btn-warning">Pay at
+			<a href="{{route('payment')}}" class="btn btn-warning">Pay at
 				<i class="fa fa-cc-paypal fa-2x"></i></a>
 		</div>
 	</div>
